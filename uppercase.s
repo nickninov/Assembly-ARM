@@ -1,3 +1,5 @@
+@ A program that converts lowercase letters to uppercase
+
 .global _start
 
 _start:
