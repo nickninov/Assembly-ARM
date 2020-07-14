@@ -86,7 +86,7 @@ writeFile:
     MOV R0, R10                 @ Move field descriptor from R10 to R0
     
     LDR R1, =buffer
-    MOV R2, R4
+    SUB R2, R4, #1              @ Remove \n (Enter) from end of string
 
     SVC 0                       @ System call
 
